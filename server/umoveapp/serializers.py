@@ -5,7 +5,7 @@ from rest_framework import serializers
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'groups')
+        fields = ('url', 'username', 'group', 'first_name', 'last_name', 'email')
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -16,10 +16,10 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class StudioSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Studio
-        fields = ('url', 'name')
+        fields = ('url', 'name', 'address', 'city', 'state', 'zipcode', 'phone', 'email')
 
 class ClassSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Class
-        fields = ('url', 'name')
+        fields = ('url', 'name', 'start_time')

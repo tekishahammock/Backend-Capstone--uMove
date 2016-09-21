@@ -19,9 +19,11 @@ class GroupViewSet(viewsets.ModelViewSet):
     serializer_class = GroupSerializer
 
 class StudioViewSet(viewsets.ModelViewSet):
+    model = Studio
     queryset = Studio.objects.all()
     serializer_class = StudioSerializer
 
 class ClassViewSet(viewsets.ModelViewSet):
+    model = Class
     queryset = Class.objects.all().order_by('-studio')
     serializer_class = ClassSerializer

@@ -1,0 +1,28 @@
+<div ng-include="'app/navbar.html'"></div>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Studios</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- will be a listing of all studios registered with uMove -->
+    <!-- studios will take up col-xs-4, col-sm-6 -->
+    <!-- clicking on a studio will take users to the classes page and will display a list of all classes offered by that studio -->
+    <div ng-repeat="studio in studios">
+        <p>{{studio.name}}</p>
+        <p>{{studio.address1}}</p>
+        <p>{{studio.city}}</p>
+        <p>{{studio.state}}</p>
+        <p>{{studio.zipcode}}</p>
+        <p>{{studio.phone}}</p>
+        <p>{{studio.email}}</p>
+        <!-- will include link to view classes -->
+    </div>
+
+</div>
+<!-- /.container -->

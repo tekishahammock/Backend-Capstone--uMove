@@ -1,0 +1,25 @@
+<div ng-include="'app/navbar.html'"></div>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Classes</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- will be a listing of all by nearest date (that isn't in the past) -->
+    <!-- will allow users to search by class tag and studio -->
+    <!-- right side of page will feature the nearest class by default, will change to whatever class the user clicks to get more details -->
+    <!-- classes will be listed in a row on the left side of the page -->
+    <div ng-repeat="class in classes">
+        <p>{{class.name}}</p>
+        <p>{{class.studio}}</p>
+        <p>{{class.start_time}}</p>
+        <p>{{class.end_time}}</p>
+    </div>
+
+</div>
+<!-- /.container -->

@@ -22,4 +22,4 @@ class ClassSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Class
-        fields = ('url', 'name', 'start_time')
+        fields = ('url', 'name', 'description', 'tag', 'start_time', 'end_time', 'capacity', 'studio', 'cost')

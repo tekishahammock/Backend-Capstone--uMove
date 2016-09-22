@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Studio(models.Model):
     name = name = models.CharField(max_length=140)
-    address1 = models.CharField(max_length=200)
+    address = models.CharField(max_length=200)
     city = models.CharField(max_length=140)
     state = models.CharField(max_length=2)
     zipcode = models.IntegerField()

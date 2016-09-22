@@ -30,8 +30,8 @@
     <div class="col-sm-4">
         <div ng-repeat="class in classes">
             <h3>{{class.name}}</h3>
-            <p>{{class.tag}} - {{class.start_time}}</p>
-            <button id="class-detail-{{class.id}}" class="btn btn-info">Details</button>
+            <p>{{class.start_time}}</p>
+            <button id="{{class.url}}" class="btn btn-info" ng-click="classDetailEvent()">Details</button>
         </div>
     </div>
     <div class="col-sm-8">
